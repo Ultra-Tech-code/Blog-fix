@@ -1,5 +1,5 @@
 
-//blog.js
+//blog.js data
 const blogPosts = [
   {
     id: 1,
@@ -70,7 +70,7 @@ const blogPosts = [
     author: {
       name: "Ebubedike Nzube Edwin",
       title: "Blockchain Developer",
-      image: "./assets/Nzube.jpg" // You can change the image path if needed
+      image: "./assets/Nzube.jpg" 
     },
     date: "Oct 28, 2024",
     readTime: "3 mins read",
