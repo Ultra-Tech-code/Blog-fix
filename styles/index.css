@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.meta-info {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more {
+    text-align: right;
+}
+
+.read-more a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more a:hover {
+    background-color: #0056b3;
+}
+
+.bloggers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.blogger-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.blogger-card:hover {
+    transform: translateY(-5px);
+}
+
+.blogger-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+.blogger-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.blogger-info {
+    flex: 1;
+}
+
+.blogger-info h3 {
+    color: #333;
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.blogger-info p {
+    color: #666;
+    font-size: 0.7rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    .bloggers-grid {
+        grid-template-columns: 1fr;
+    }
+}
